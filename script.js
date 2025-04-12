@@ -2,6 +2,8 @@ const units = {
     length: {
       meters: 1,
       kilometers: 1000,
+      centimeters: 0.01,
+      millimeters: 0.001,
       feet: 0.3048,
       inches: 0.0254,
       miles: 1609.34
@@ -9,6 +11,7 @@ const units = {
     weight: {
       kilograms: 1,
       grams: 0.001,
+      milligrams: 0.000001,
       pounds: 0.453592,
       ounces: 0.0283495
     },
@@ -20,6 +23,7 @@ const units = {
       days: 86400
     }
   };
+  
   
   window.onload = () => updateUnitOptions();
   
