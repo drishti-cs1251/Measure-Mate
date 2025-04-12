@@ -1,51 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
+
 body {
-    font-family: Arial, sans-serif;
-    background: #f0f4f8;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
-  
-  .container {
-    background: white;
-    padding: 2rem;
-    border-radius: 12px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    width: 300px;
-    text-align: center;
-  }
-  
-  input, select, button {
-    margin-top: 10px;
-    padding: 10px;
-    width: 100%;
-    font-size: 1rem;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-  }
-  
-  button {
-    background: #007bff;
-    color: white;
-    border: none;
-    cursor: pointer;
-    margin-top: 20px;
-  }
-  
-  button:hover {
-    background: #0056b3;
-  }
-  
-  h2 {
-    margin-top: 20px;
-    color: #333;
-  }
-  
-  .selectors {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 10px;
-  }
-  
+  font-family: 'Quicksand', sans-serif;
+  background: linear-gradient(to right, #ffe3ec, #f7f0ff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background: white;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(255, 182, 193, 0.2);
+  width: 350px;
+  text-align: center;
+  border: 3px solid #ffb6c1;
+}
+
+h1 {
+  color: #d63384;
+  margin-bottom: 20px;
+}
+
+input, select, button {
+  margin-top: 10px;
+  padding: 12px;
+  width: 100%;
+  font-size: 1rem;
+  border: 2px solid #f8c6d8;
+  border-radius: 12px;
+  outline: none;
+  background: #fff0f5;
+  color: #6c3483;
+  transition: 0.3s ease;
+}
+
+input:focus, select:focus {
+  border-color: #ff69b4;
+  box-shadow: 0 0 5px #ffc0cb;
+}
+
+button {
+  background: linear-gradient(to right, #ffb6c1, #ff69b4);
+  color: white;
+  font-weight: 600;
+  margin-top: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: linear-gradient(to right, #ff69b4, #ff1493);
+}
+
+.selectors {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+#result {
+  margin-top: 25px;
+  color: #c71585;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
