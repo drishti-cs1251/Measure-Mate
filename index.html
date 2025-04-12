@@ -8,27 +8,21 @@
 </head>
 <body>
   <div class="container">
-    <h1>Length Converter</h1>
+    <h1>Measurement Converter</h1>
+
+    <select id="category" onchange="updateUnitOptions()">
+      <option value="length">Length</option>
+      <option value="weight">Weight</option>
+      <option value="temperature">Temperature</option>
+      <option value="time">Time</option>
+    </select>
+
     <input type="number" id="inputValue" placeholder="Enter value" />
 
     <div class="selectors">
-      <select id="fromUnit">
-        <option value="meters">Meters</option>
-        <option value="kilometers">Kilometers</option>
-        <option value="feet">Feet</option>
-        <option value="inches">Inches</option>
-        <option value="miles">Miles</option>
-      </select>
-
+      <select id="fromUnit"></select>
       <span>to</span>
-
-      <select id="toUnit">
-        <option value="meters">Meters</option>
-        <option value="kilometers">Kilometers</option>
-        <option value="feet">Feet</option>
-        <option value="inches">Inches</option>
-        <option value="miles">Miles</option>
-      </select>
+      <select id="toUnit"></select>
     </div>
 
     <button onclick="convert()">Convert</button>
